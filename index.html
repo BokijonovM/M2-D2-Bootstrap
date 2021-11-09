@@ -25,6 +25,8 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- IMPORT ALL THE BOOTSTRAP RELATED CSS & SCRIPTS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
     <style>
         /* EXERCISE 1
@@ -40,10 +42,20 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             - The album genre
             - The album duration
             - etc
+            
 
             create CSS rules to style them if needed
             ...to make sure every Album component looks the same.
          */
+         .card-img-top{
+             margin: 5px;
+            }
+            .album-review{
+                width: 300px;
+                height: 300px;
+
+            }
+         
     </style>
 </head>
 
@@ -52,6 +64,40 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             Implement a navigation bar using the bootstrap component
             This navigation bar must link every section in your page.
         -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Music Albums</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+              <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                    Link
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
 
     <!-- EXERCISE 3
             Create a responsive section for your favourite albums.
@@ -60,6 +106,82 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             - 3 albums per row when you are on a tablet (or a smaller viewport)
             - 2 albums per row when you are on a small screen
         -->
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">Fav Album sections</h1>
+              <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col row">
+            <div class="card col-sm-12 col-md-5 col-lg-4 col-xl-3 " style="">
+                <img src="https://2.bp.blogspot.com/-G2Guxv0VICA/UxS4ppF5otI/AAAAAAAAArs/J2ivit_kIec/s1600/Photo+Album.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            <div class="card col-sm-12 col-md-5 col-lg-4 col-xl-3 " style="">
+                <img src="https://2.bp.blogspot.com/-G2Guxv0VICA/UxS4ppF5otI/AAAAAAAAArs/J2ivit_kIec/s1600/Photo+Album.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            <div class="card col-sm-12 col-md-5 col-lg-4 col-xl-3 " style=" ">
+                <img src="https://2.bp.blogspot.com/-G2Guxv0VICA/UxS4ppF5otI/AAAAAAAAArs/J2ivit_kIec/s1600/Photo+Album.jpg" class="card-img-top" alt="...">  
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            <div class="card col-sm-12 col-md-5 col-lg-4 col-xl-3 " style=" ">
+                <img src="https://2.bp.blogspot.com/-G2Guxv0VICA/UxS4ppF5otI/AAAAAAAAArs/J2ivit_kIec/s1600/Photo+Album.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            <div class="card col-sm-12 col-md-5 col-lg-4 col-xl-3 " style=" ">
+                <img src="https://2.bp.blogspot.com/-G2Guxv0VICA/UxS4ppF5otI/AAAAAAAAArs/J2ivit_kIec/s1600/Photo+Album.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            <div class="card col-sm-12 col-md-5 col-lg-4 col-xl-3 " style=" ">
+                <img src="https://2.bp.blogspot.com/-G2Guxv0VICA/UxS4ppF5otI/AAAAAAAAArs/J2ivit_kIec/s1600/Photo+Album.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            <div class="card col-sm-12 col-md-5 col-lg-4 col-xl-3 " style=" ">
+                <img src="https://2.bp.blogspot.com/-G2Guxv0VICA/UxS4ppF5otI/AAAAAAAAArs/J2ivit_kIec/s1600/Photo+Album.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            <div class="card col-sm-12 col-md-5 col-lg-4 col-xl-3 " style=" ">
+                <img src="https://2.bp.blogspot.com/-G2Guxv0VICA/UxS4ppF5otI/AAAAAAAAArs/J2ivit_kIec/s1600/Photo+Album.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </div>
+        
+      </div>
 
     <!-- EXERCISE 4
             Create a section for the album reviews.
@@ -72,11 +194,49 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             - Tracklist
             - ... And whatever you think it's interesting about it!
         -->
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h2 class="display-4">Album review</h2>
+              <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+              <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-3 m-auto">
+                      <img src="https://2.bp.blogspot.com/-G2Guxv0VICA/UxS4ppF5otI/AAAAAAAAArs/J2ivit_kIec/s1600/Photo+Album.jpg" img-thumbnail" alt="..." class="album-review">
+                    </div>   
+                    <div class="col-sm-12 col-md-5 col-lg-4 col-xl-8 m-auto">
+                        <article > 
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente sunt, ullam similique dolor necessitatibus nobis libero voluptatum fuga neque minus culpa eum. Facilis, nostrum vero? Ratione odit illo vel quasi!
+                            Voluptate itaque sit, et iure, consectetur error reiciendis voluptas facere esse debitis iste qui perspiciatis sequi impedit enim saepe quaerat soluta delectus nobis tempora perferendis sint recusandae maiores dicta. Doloribus!
+                            Corrupti eveniet vero dicta amet totam. Possimus quos quis omnis similique quam labore ea quia illo mollitia praesentium, neque nemo aliquid cum et rem exercitationem ducimus assumenda ipsa voluptas eius.
+                        </article>
+                    </div>
+                </div>
+            </div>
+          </div>
 
     <!-- EXERCISE 5
             Worst album list! Choose the albums you dislike or some you think are overrated and list it
             in this "hall of shame" chart! 
         -->
+        <div class="worst-album-list">
+            <div class="container">
+                <h2 class="display-4">Worst Album List</h2>
+                <p class="lead">This is the worst album list I have ever listened.</p>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-3 m-auto">
+                      <img src="https://yt3.ggpht.com/a/AGF-l79146gCWdVRQDJnPOz1uWCz6paBVNKJUywF8g=s900-mo-c-c0xffffffff-rj-k-no" img-thumbnail" alt="..." class="album-review">
+                    </div>   
+                    <div class="col-sm-12 col-md-5 col-lg-4 col-xl-8 m-auto">
+                        <article > 
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente sunt, ullam similique dolor necessitatibus nobis libero voluptatum fuga neque minus culpa eum. Facilis, nostrum vero? Ratione odit illo vel quasi!
+                            Voluptate itaque sit, et iure, consectetur error reiciendis voluptas facere esse debitis iste qui perspiciatis sequi impedit enim saepe quaerat soluta delectus nobis tempora perferendis sint recusandae maiores dicta. Doloribus!
+                            Corrupti eveniet vero dicta amet totam. Possimus quos quis omnis similique quam labore ea quia illo mollitia praesentium, neque nemo aliquid cum et rem exercitationem ducimus assumenda ipsa voluptas eius.
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
 
     <!-- EXERCISE 6
             Do you have any musician / band you admire or you are a fan of?
