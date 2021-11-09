@@ -255,7 +255,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
               <p class="lead"><a href="https://en.wikipedia.org/wiki/Maher_Zain">Read about him.</a></p>
               <div class="row">
                     <div class="col-sm-12 col-md-6 col-lg-3 m-auto">
-                      <img src="https://i.ytimg.com/vi/SPFwqIDmjLA/maxresdefault.jpg" img-thumbnail" alt="..." class="album-loved">
+                      <img src="https://i.ytimg.com/vi/SPFwqIDmjLA/maxresdefault.jpg" img-thumbnail" alt="..." class="album-loved" style="margin-left: 0%; ">
                     </div>   
                     <div class="col-sm-12 col-md-5 col-lg-2 col-xl-4 m-auto">
                         <article > 
@@ -361,6 +361,26 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
     <!-- EXERCISE 8
             Implement a footer with some information / social links.
         -->
+        <style>
+            footer{
+                background: #e9ecef;
+                padding: 15px 23px;
+                color: black;
+                text-align: center;
+                margin-top: 60px;
+
+            }
+            footer span a{
+                color:#00db71;
+                text-decoration: none;
+            }
+            footer span a:hover{
+                text-decoration: underline;
+            }
+        </style>
+        <footer>
+            <span>Created By <a href="https://www.linkedin.com/in/bokijonov/">Bokijonov Mukhsinjon</a> | <span class="far fa-copyright"></span> 2021 All rights reserved.</span>
+        </footer>
 
     <!-- ############ EXTRA:
         EXERCISE 9
@@ -378,7 +398,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             Create the JavaScript logic that runs when the page finished loading and 
             counts the albums and applies the number in the area of the footer you've previously decided.
         -->
-        <script src="index.js"></script>
+        
 </body>
 
 </html>
